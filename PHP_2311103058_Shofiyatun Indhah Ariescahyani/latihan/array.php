@@ -1,0 +1,1 @@
+<?php $hewan = ["Kucing", "Anjing", "Burung","Unta", "Kanguru", "gajah"]; echo $hewan[5]; // Output: Kucing ?>
