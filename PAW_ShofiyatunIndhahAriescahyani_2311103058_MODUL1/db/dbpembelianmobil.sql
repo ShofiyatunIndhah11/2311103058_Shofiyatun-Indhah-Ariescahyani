@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 17, 2025 at 01:49 AM
+-- Generation Time: Mar 22, 2025 at 03:27 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -31,7 +31,7 @@ CREATE TABLE `pembelian` (
   `id_beli` int NOT NULL,
   `nama` varchar(50) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `nomor_telepon` int NOT NULL,
+  `nomor_telepon` varchar(15) NOT NULL,
   `pilih_mobil` enum('Sedan','SUV','Hatchback') NOT NULL,
   `alamat` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

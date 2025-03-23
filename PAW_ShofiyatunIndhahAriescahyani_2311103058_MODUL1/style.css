@@ -1,0 +1,172 @@
+/* Reset dan Style Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff9800, #ffeb3b);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #bf360c;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+    color: #bf360c;
+    font-weight: normal;
+}
+
+
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #e65100;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #e65100;
+    box-shadow: 0 0 8px rgba(230, 81, 0, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 13px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+button {
+    background: #e65100;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 130px;
+}
+
+button:hover {
+    background: #bf360c;
+    transform: translateY(-3px);
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    margin-top: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+th {
+    background: #e65100;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+tr:hover {
+    background-color: #ffe0b2;
+    transition: background 0.3s;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    button {
+        width: 100%;
+    }
+}
